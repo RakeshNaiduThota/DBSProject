@@ -1,0 +1,271 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.software{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(160deg, #222, #ddd, #fff, rgb(242, 73, 73)); */
+}
+.navigation{
+    width: 100%;
+    height: 8vh;
+    background-color: aliceblue;
+
+}
+.softwareBody{
+    width: 100%;
+    height: calc(100vh - 8vh);
+    /* background-image: url('./background.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.righter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+@keyframes example {
+    0%{
+        top:-15px;
+
+    }
+    100%{
+        top:10px;
+    }
+  }
+
+.customBtn{
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loginContainerBody{
+    width: 100%;
+    height: calc(100vh - 8vh);
+    /* background-image: url('./login123.jpg'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    
+}
+.loginContainer{
+    width: 310px;
+    height: 360px;
+    background-color: transparent !important;
+    color: aliceblue;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    box-shadow: 0 0 8px 0 #4BB543 !important;
+    border: #4BB543 !important;
+}
+.verifyContainer{
+    width: 360px;
+    height: 250px;
+    background-color: transparent !important;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px 0 #4285F4 !important;
+    border: #4285F4 !important;
+}
+.profile_icon{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(50%, -10%);
+    width: 100px;
+    height: 100px;
+}
+.btnbtn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* @font-face {
+    font-family: dbs;
+    src: url('./Rampart_One/RampartOne-Regular.ttf');
+} */
+.title{
+    font-family: serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutText{
+        margin-top: -40px !important; 
+    }
+    .aboutVideo{
+        height: 215px !important;
+    }
+    .loginContainer{
+        width: 320px;
+        height: 400px;
+    }
+    .verifyContainer{
+        width: 360px;
+        height: 250px;
+    }
+}
+
+/* background styles */
+.styleCircle{
+    width: 300px;
+    height: 300px;
+    border: 80px solid rgb(134, 45, 45);
+    position: fixed;
+    bottom: -140px;
+    left: -150px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: .5;
+}
+.styleSquare{
+    width: 60px;
+    height: 60px;
+    border: 8px solid#4285F4;
+    position: fixed;
+    left: 40%;
+    bottom: 10%;
+    border-radius: 8px;
+    animation: rotating 5s linear infinite;
+}
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.Bottomdots{
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+}
+.Dots{
+    position: fixed;
+    top: 10%;
+}
+.styleDots{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+}
+.styleDots2{
+    position: absolute;
+    top: 10%;
+    left: 20px;
+}
+.styleDots3{
+    position: absolute;
+    top: 10%;
+    left: 30px;
+}
+.styleDots4{
+    position: absolute;
+    top: 10%;
+    left: 40px;
+}
+.styleDots span{
+    width: 6px;
+    height: 6px;
+    display: block;
+    background-color: red;
+    margin: 5px;
+    border-radius: 50%;
+
+}
+.styleDots2 span{
+    width: 6px;
+    height: 6px;
+    display: block;
+    background-color: red;
+    margin: 5px;
+    border-radius: 50%;
+
+}
+.styleDots3 span{
+    width: 6px;
+    height: 6px;
+    display: block;
+    background-color: red;
+    margin: 5px;
+    border-radius: 50%;
+
+}
+.styleDots4 span{
+    width: 6px;
+    height: 6px;
+    display: block;
+    background-color: red;
+    margin: 5px;
+    border-radius: 50%;
+
+}
+/* swiper */
+.slider{
+    position: relative;
+    height: 100%;
+
+}
+.swiper {
+    width: 90%;
+    height: 60%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Dashboard */
+  .icon i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

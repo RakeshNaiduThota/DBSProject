@@ -1,0 +1,24 @@
+<div *ngIf="isLog" id ='t'class="navigation">
+    <!-- {{console.log(this.UserLoginService.isloggedIn)}} -->
+    <nav class="navbar navbar-expand-sm navbar-dark py-0" style="background-color: black;">
+        <a class="navbar-brand" href="#"><img src="../assets/logo.png" style="width: 45px; height: auto; margin-right: 8px;" class="rounded border-0" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active"><i class="fa fa-home mr-1"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info mr-1"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login" routerLinkActive="active"><i class="fa fa-user-circle-o mr-1"></i>Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
