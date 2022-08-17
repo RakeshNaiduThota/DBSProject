@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'FPassword', component: ForgetPasswordComponent},
   {path: 'empDashboard/:uname', component: DashboardComponent},
   {path: 'credit', component: CreditComponent},
-  {path: 'employees', component: EmployeesComponent}
+  {path: 'customers', component: EmployeesComponent}
 ];
 
 @NgModule({
