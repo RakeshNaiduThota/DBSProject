@@ -4,6 +4,7 @@ import java.util.*;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +40,13 @@ public class EmployeeController {
 	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping("/transactions")
 	public List<Transactions> getTransactions(){
-		return transactionRepo.findAll();
+		return transactionRepo.findAll(Sort.by(Sort.Direction.DESC,"transactionId"));
+	}
+	
+	@CrossOrigin(origins = "http://localhost:4200")
+	@RequestMapping("/customers")
+	public List<Customers> getCustomers(){
+		return customerRepo.findAll();
 	}
 	
 	@Transactional
